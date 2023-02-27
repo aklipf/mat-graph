@@ -1,0 +1,23 @@
+[project]
+name = "crystallographic-graph"
+version = "0.0.2"
+authors = [
+  { name="Astrid Klipfel", email="astridklipfel@gmail.com" },
+]
+description = "Generate graphe from crystallographic materials"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.8"
+
+dependencies = [
+  'torch',
+  'torch-scatter',
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[tool.setuptools]
+packages = ["crystallographic_graph","crystallographic_graph.builder"]
